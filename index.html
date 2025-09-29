@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will & Jucas - Barcelona Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>WILL & JUCAS</h1>
+            <h2>BARCELONA</h2>
+            <h3>APRIL 25th</h3>
+            <h4>2026</h4>
+        </header>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="story-image">
+                <img src="couple-photo.png" alt="Will and Jucas" id="couplePhoto">
+            </div>
+            <div class="story-text">
+                <p>7 Years or so ago, we met in an infamous nightspot in Mexico City. Since then we've lived in two cities, seen the world and eaten a heck of a lot of 2x1 pizza.</p>
+
+                <p>If you're reading this it's because we'd love you to be at our wedding in April. We realise it might be a long way away from where you live., so if you can't make it, we will definitely see you to raise a glass together somewhere in the world soon!</p>
+
+                <p>But if you can, we'd love you to join us for a fun weekend of tapas, cheese & wine, and maybe a bit of dancing.</p>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section">
+            <p><strong>Where:</strong> Somewhere in central Barcelona (most likely in Poble Sec) We will block book some rooms in a nearby hotel, let us know if you're interested in this.</p>
+
+            <p><strong>When:</strong> 25th April, but if you come on Friday 24th we'll also do something on Friday night. The "main event" will be on Saturday. On Sunday we'll find something to do as well - feel free to join for as much or as little as you like. More details to follow nearer the time.</p>
+
+            <p><strong>What:</strong> Barcelona is known for its chilled, informal beach vibes. So it'll be casual!</p>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section">
+            <h2>RSVP</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Name(s)</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group radio-group">
+                    <label>
+                        <input type="radio" name="attending" value="yes" required>
+                        Yes I'll come
+                    </label>
+                    <label>
+                        <input type="radio" name="attending" value="no">
+                        No, I can't make it
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of guests (including you)</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="plusOne">Plus one name (if applicable)</label>
+                    <input type="text" id="plusOne" name="plusOne">
+                </div>
+
+                <div class="form-group">
+                    <label for="dietary">Dietary requirements</label>
+                    <input type="text" id="dietary" name="dietary" placeholder="e.g., vegetarian, vegan, allergies">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Extra note:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

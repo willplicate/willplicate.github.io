@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Will & Jucas Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sorts Mill Goudy', serif;
+            background-color: #F0E6DE;
+            color: #4A2C2A;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 60px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .photo-grid img {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THANK YOU!</h1>
+        <p class="subtitle">More details to come!</p>
+
+        <div class="photo-grid">
+            <img src="pizza1.jpg" alt="Pizza photo 1">
+            <img src="pizza2.jpg" alt="Pizza photo 2">
+            <img src="pizza3.jpg" alt="Pizza photo 3">
+            <img src="pizza4.jpg" alt="Pizza photo 4">
+            <img src="pizza5.jpg" alt="Pizza photo 5">
+            <img src="pizza6.jpg" alt="Pizza photo 6">
+            <img src="pizza7.jpg" alt="Pizza photo 7">
+            <img src="pizza8.jpg" alt="Pizza photo 8">
+            <img src="pizza9.jpg" alt="Pizza photo 9">
+        </div>
+    </div>
+</body>
+</html>
