@@ -51,8 +51,12 @@ document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
             throw new Error('Failed to submit RSVP')
         }
 
-        // Redirect to thank you page
-        window.location.href = 'thankyou.html'
+        // Redirect based on RSVP status
+        if (rsvpStatus === 'not_attending') {
+            window.location.href = 'sorry.html'
+        } else {
+            window.location.href = 'thankyou.html'
+        }
     } catch (error) {
         console.error('Error submitting RSVP:', error)
         alert('Sorry, there was an error submitting your RSVP. Please try again or contact us directly.')
